@@ -1,6 +1,7 @@
 use {{project-name}}::*;
 
-fn main() -> Result<(), Error> {
+#[tokio::main]
+async fn main() -> Result<(), Error> {
     // Setup trace
     trace::setup_tracing();
 
